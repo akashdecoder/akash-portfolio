@@ -25,12 +25,33 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
+              "node_modules/boxicons/css/boxicons.min.css",
+              "node_modules/glightbox/dist/css/glightbox.min.css",
+              "node_modules/swiper/swiper-bundle.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/glightbox/dist/js/glightbox.min.js",
+              "node_modules/swiper/swiper-bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -46,9 +67,19 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true
             }
           },
           "defaultConfiguration": "production"

@@ -1,0 +1,53 @@
+<i class="bi bi-list mobile-nav-toggle d-xl-none" (click)="mobileNavToggle($event)"></i>
+
+<header id="header">
+  <div class="d-flex flex-column">
+    <div class="profile">
+      <img src="assets/img/Akash.jpg" alt="" class="img-fluid rounded-circle" />
+      <h1 class="text-light"><a href="">Akash Ranjan Das</a></h1>
+      <div class="social-links mt-3 text-center">
+        <a target="_blank" href="https://github.com/akashdecoder" class="github"><i
+          class="bx bxl-github"></i></a>
+
+        <a target="_blank" href="https://www.linkedin.com/in/akash-ranjan-das-8a5370169/" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
+        <a target="_blank" href="ard.work2022@gmail.com" class="envelope"><i class="bx bx-mail-send"></i></a>
+      </div>
+    </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li>
+          <a href="/home" class="nav-link scrollto" [class.active]="isActive('/home')"><i class="bx bx-book-content"></i> <span>Home</span></a>
+        </li>
+        <li>
+        </li>
+        <li>
+          <a href="/experience" class="nav-link scrollto" [class.active]="isActive('/experience')"><i class="bx bx-book-content"></i> <span>Experience</span></a>
+        </li>
+        <li>
+          <a href="/projects" class="nav-link scrollto" [class.active]="isActive('/projects')"><i class="bx bx-book-content"></i> <span>Projects</span></a>
+        </li>
+
+        <li>
+          <a href="/education" class="nav-link scrollto" [class.active]="isActive('/education')"><i class="bx bx-book-content"></i> <span>Education</span></a>
+        </li>
+        
+        <li>
+          <a href="/certifications" class="nav-link scrollto" [class.active]="isActive('/certifications')"><i class="bx bx-book-content"></i> <span>Certifications</span></a>
+        </li>
+
+        <li>
+          <a href="/extraCurricular" class="nav-link scrollto" [class.active]="isActive('/extraCurricular')"><i class="bx bx-book-content"></i> <span>Volunteering</span></a>
+        </li>
+
+        <li>
+          <a href="https://drive.google.com/file/d/10qOU_5bHuv7iKyljZac9_Cea2Q6OC9T9/view?usp=sharing" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Download Resume</span></a>
+        </li>
+
+        
+      </ul>
+    </nav>
+    <!-- .nav-menu -->
+  </div>
+</header>
