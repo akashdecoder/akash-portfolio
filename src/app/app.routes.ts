@@ -7,14 +7,16 @@ import { CertificationsComponent } from './components/certifications/certificati
 import { ExtraCurricularComponent } from './components/extra-curricular/extra-curricular.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-export const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'education', component: EducationComponent },
-    { path: 'projects', component: ProjectsComponent },
-    { path: 'experience', component: ExperienceComponent },
-    { path: 'extras', component: EducationComponent },
-    { path: 'certifications', component: CertificationsComponent },
-    { path: 'extraCurricular', component: ExtraCurricularComponent },
-    { path: '**', component: PageNotFoundComponent}
-  ];
+// export const routes: Routes = [
+//     { path: 'home', component: HomeComponent },
+//     { path: '', redirectTo: '/home', pathMatch: 'full' },
+//     { path: 'education', component: EducationComponent },
+//     { path: 'projects', component: ProjectsComponent },
+//     { path: 'experience', component: ExperienceComponent },
+//     { path: 'extras', component: EducationComponent },
+//     { path: 'certifications', component: CertificationsComponent },
+//     { path: 'extraCurricular', component: ExtraCurricularComponent },
+//     { path: '**', component: PageNotFoundComponent}
+//   ];
+
+
