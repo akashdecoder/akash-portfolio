@@ -1,10 +1,10 @@
 import { AfterViewInit, Component, ElementRef, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -15,31 +15,13 @@ export class NavbarComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.navbarlinks = document.querySelectorAll('#navbar .scrollto');
-    // this.navbarlinksActive();
     this.toggleBacktotop();
   }
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    // this.navbarlinksActive();
     this.toggleBacktotop();
   }
-
-  // navbarlinksActive(): void {
-  //   const position = window.scrollY + 200;
-  //   this.navbarlinks.forEach(navbarlink => {
-  //     const hash = navbarlink.getAttribute('href');
-  //     if (!hash) return;
-  //     console.log();
-  //     const section = document.querySelector(hash) as HTMLElement;
-  //     if (!section) return;
-  //     if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-  //       navbarlink.classList.add('active');
-  //     } else {
-  //       navbarlink.classList.remove('active');
-  //     }
-  //   });
-  // }
 
   toggleBacktotop(): void {
     const backtotop = document.querySelector('.back-to-top');
